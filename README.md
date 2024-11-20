@@ -18,4 +18,4 @@ This is a product page for an e-commerce website showcasing a collection of snow
 
 To get started with this project, clone the repository to your local machine
 
-##Deploy Link:
+##Deploy Link:https://nandabendkoli.github.io/Snowboard_collection/
