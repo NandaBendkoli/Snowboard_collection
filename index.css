@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+}
+
+button {
+  padding: 15px 30px;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  width: 200px;
+  height: 50px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.loading-dots {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loading-dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  button {
+    width: 193px;
+    height: 49px;
+  }
+}
+
+@media (max-width: 599px) {
+  body {
+    font-size: 14px;
+  }
+
+  button {
+    width: 150px;
+    height: 45px;
+  }
+
+  .container {
+    width: 90%;
+  }
+}

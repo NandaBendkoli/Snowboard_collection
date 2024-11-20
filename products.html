@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snowboard Collection - Products</title>
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      />
+    </head>
+
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>All Collection</h1>
+        <select id="sort-options">
+          <option value="default">Sort By</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+      <div id="product-list" class="product-list"></div>
+    </div>
+
+    <script src="products.js"></script>
+  </body>
+</html>

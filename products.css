@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 85%;
+  margin: 20px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#sort-options {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-item {
+  background-color: #ffffff;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.product-item p {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.product-item p.price {
+  font-weight: bold;
+}
+
+.product-item .cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-item .cart-btn:hover {
+  background-color: #0056b3;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item .cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between the icon and the text */
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-item .cart-btn i {
+  font-size: 18px; /* Adjust icon size */
+}
+
+.product-item .cart-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 599px) {
+  .container {
+    width: 90%;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  #sort-options {
+    text-align: center;
+  }
+
+  .product-item {
+    width: 100%;
+  }
+}
